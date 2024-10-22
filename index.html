@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>לוח שנה להזמנת תורים</title>
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Google API Script -->
+  <script src="https://apis.google.com/js/api.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>לוח שנה להזמנת תורים</h1>
+    <button id="authorize_button">התחבר עם Google</button>
+    <button id="signout_button" style="display:none;">התנתק</button>
+    <div class="calendar-header">
+      <div>א'</div><div>ב'</div><div>ג'</div><div>ד'</div><div>ה'</div><div>ו'</div><div>ש'</div>
+    </div>
+    <div id="calendar" class="calendar-grid"></div>
+    <div id="timeslot-container" class="hidden">
+      <h2>בחר שעה פנויה:</h2>
+      <div id="timeslots"></div>
+    </div>
+    <div id="message"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
